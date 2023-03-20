@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera, .navbar, .seccion, .perfumes, .articulo, .pie{
+    padding: 10px;
+    border: 1px solid;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 300px repeat(3, auto);
+    grid-template-rows: 30px 50px repeat(3,auto) 50px;
+
+    grid-template-areas:
+    "cabecera cabecera cabecera"
+    "navbar navbar navbar"
+    "seccion articulo articulo"
+    "seccion perfumes perfumes"
+    "seccion perfumes perfumes"
+    "pie pie pie";
+}
+.cabecera{
+    grid-area: cabecera;
+}
+.navbar{
+    grid-area: navbar;
+    width: 100%;
+    background-color: aquamarine;
+    top: 0;
+	position: sticky;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+}
+li:hover{
+    background-color: aqua;
+}
+.seccion{
+    grid-area: seccion;
+}
+.articulo{
+    grid-area: articulo;
+}
+.perfumes{
+    grid-area: perfumes;
+}
+.pie{
+    grid-area: pie;
+}
+.perfumes{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articulos{
+	display: flex;
+	justify-content: center;
+	margin: 60px;
+	height: 400px;
+	width: 300px;
+	border: solid 1px rgb(173, 172, 172);
+	border-radius: 10px;
+}
+.compra{
+	margin-top: 90%;
+	height: 50px;
+	border-radius: 20px;
+	display: block;
+}
+.compra:hover{
+cursor: pointer;
+}
+
+.articulos:hover{
+	cursor: pointer;
+	border-color: rgb(5, 5, 5);	
+}
