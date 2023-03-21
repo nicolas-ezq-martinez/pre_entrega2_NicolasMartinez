@@ -24,9 +24,9 @@ body{
     grid-template-rows:  auto auto   50px;
     grid-template-areas:
     "navbar navbar navbar"
-    "seccion seccion2 seccion2"
-    "seccion seccion2 seccion2"
-    "seccion seccion2 seccion2"
+    "seccion seccion seccion"
+    "seccion seccion seccion"
+    "seccion seccion seccion"
     "pie pie pie";
 }
 
