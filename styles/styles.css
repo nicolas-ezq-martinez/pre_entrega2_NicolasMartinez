@@ -21,7 +21,7 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 300px repeat(3, auto);
-    grid-template-rows: 50px 50px repeat(3,auto) 50px;
+    grid-template-rows: 50px auto repeat(3,auto) 50px;
 
     grid-template-areas:
     "cabecera cabecera cabecera"
@@ -97,4 +97,12 @@ cursor: pointer;
 .articulos:hover{
 	cursor: pointer;
 	border-color: rgb(5, 5, 5);	
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.carousel-item img.custom{
+    height: 200px;
+    width: 200px;
 }
