@@ -26,9 +26,9 @@ body{
     grid-template-areas:
     "cabecera cabecera cabecera"
     "navbar navbar navbar"
-    "seccion seccion seccion"
-    "seccion seccion seccion"
-    "seccion seccion seccion"
+    "seccion articulo articulo"
+    "seccion perfumes perfumes"
+    "seccion perfumes perfumes"
     "pie pie pie";
 }
 .cabecera{
