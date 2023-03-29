@@ -13,9 +13,8 @@ body{
     align-items: center;
 }
 
-.cabecera, .navbar, .seccion, .perfumes, .articulo, .pie{
-    padding: 10px;
-    border: 1px solid;
+.cabecera, .navbar, .seccion, .pie{
+    padding: 10px;      
 }
 
 .grid{
@@ -24,8 +23,6 @@ body{
     grid-template-rows:  auto auto   50px;
     grid-template-areas:
     "navbar navbar navbar"
-    "seccion seccion seccion"
-    "seccion seccion seccion"
     "seccion seccion seccion"
     "pie pie pie";
 }
@@ -47,43 +44,20 @@ a{
 li:hover{
     background-color: aqua;
 }
+
 .seccion{
+    width: 100%;
     grid-area: seccion;
     overflow: hidden;
 }
-.articulo{
-    grid-area: articulo;
-}
-.perfumes{
-    grid-area: perfumes;
-}
+
 .pie{
     grid-area: pie;
     font-size: 20px;
     background-color: aquamarine;
 }
-.grupomarcas{
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.seccion2{
-    grid-area: seccion2;
-}
-.marcas{
-	display: flex;
-	justify-content: center;
-	margin: 60px;
-	height: 220px;
-	width: 300px;
-	border: solid 1px rgb(173, 172, 172);
-	border-radius: 10px;
+.redes{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-img{
-    width: 200px;
-    height: 200px;
-}
-.carousel, .carousel-inner > .item > img {
-    width: 300px;
-  }

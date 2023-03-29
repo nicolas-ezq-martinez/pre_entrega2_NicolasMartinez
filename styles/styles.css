@@ -13,7 +13,7 @@ body{
     align-items: center;
 }
 
-.cabecera, .navbar, .seccion, .perfumes, .articulo, .pie{
+.cabecera, .seccion, .perfumes, .articulo, .pie{
     padding: 10px;
     border: 1px solid;
 }
@@ -87,3 +87,7 @@ img{
 .carousel, .carousel-inner > .item > img {
     width: 300px;
   }
+  .redes{
+    display: flex;
+    justify-content: space-evenly;
+}
