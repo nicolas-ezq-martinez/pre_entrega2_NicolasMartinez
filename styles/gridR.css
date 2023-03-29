@@ -55,9 +55,21 @@ li:hover{
     grid-area: pie;
     font-size: 20px;
     background-color: aquamarine;
+
 }
 .redes{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
 }
-
+.tel{
+    margin-left: 265px;
+}
+.tel:hover{
+    color: rgb(17, 66, 226);
+    cursor: pointer;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

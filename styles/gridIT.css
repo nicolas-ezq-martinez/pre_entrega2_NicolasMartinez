@@ -70,6 +70,9 @@ li:hover{
 }
 .seccion{
     grid-area: seccion;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .articulo{
     grid-area: articulo;
@@ -124,6 +127,7 @@ li:hover{
     display: flex;
     flex-wrap: wrap;
     font-size: 15px;
+    white-space: nowrap;
 }
 .compra{
     padding: 5px;
@@ -140,12 +144,7 @@ li:hover{
     cursor: pointer;
     background-color: rgb(158, 177, 177);
 }
-.container .compra{
-    display: none;
-}
-.container:hover .compra{
-    display: block;
-}
+
 .container:hover{
 	cursor: pointer;
 	border-color: rgb(5, 5, 5);	
@@ -153,4 +152,7 @@ li:hover{
 .redes{
     display: flex;
     justify-content: space-evenly;
+}
+.dropdown{
+    margin-bottom: 10px;
 }
