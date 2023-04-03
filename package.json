@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "bootstrap-icons": "^1.10.3"
-  }
+  },
+  "name": "preentrega2-martinez",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas-ezq-martinez/pre_entrega2_NicolasMartinez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolas-ezq-martinez/pre_entrega2_NicolasMartinez/issues"
+  },
+  "homepage": "https://github.com/nicolas-ezq-martinez/pre_entrega2_NicolasMartinez#readme",
+  "description": ""
 }

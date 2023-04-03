@@ -1,0 +1,45 @@
+@media (min-width:768px) {
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+            "navbar-styles navbar-styles navbar-styles"
+            "seccion perfumes perfumes"
+            "seccion perfumes2 perfumes2"
+            "pie pie pie";
+        grid-template-columns: auto repeat(2, auto);
+        grid-template-rows: auto repeat(2, auto) 50px;
+    }
+
+    .container {
+        transition: all 150ms linear;
+    }
+
+    .container:hover .compra {
+        opacity: 1;
+    }
+
+    .container:hover {
+        border-color: rgb(5, 5, 5);
+        border-bottom: 5px solid;
+    }
+
+    .compra {
+        opacity: 0;
+        transition: all 300ms linear;
+    }
+
+    .compra:hover {
+        cursor: pointer;
+        background-color: rgb(158, 177, 177);
+    }
+
+    .navbar-styles {
+        li:hover {
+            background-color: aqua;
+        }
+    }
+
+}
+
+@import "navbar";

@@ -1,0 +1,77 @@
+$anchototal: 100%;
+$anchototal: 100%;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.cabecera,
+.navbar-style,
+.seccion,
+.pie {
+    padding: 10px;
+}
+
+.main {
+    width: $anchototal;
+    height: $anchototal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-style {
+        width: 100%;
+        height: fit-content;
+        background-color: aquamarine;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        li:hover {
+            background-color: aqua;
+        }
+
+    }
+
+
+    .seccion {
+        width: 50%;
+        overflow: hidden;
+
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .pie {
+        height: 50px;
+        width: $anchototal;
+        font-size: 20px;
+        background-color: aquamarine;
+
+        .redes {
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
+
+@import "navbar";
