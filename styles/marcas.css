@@ -23,8 +23,8 @@
 }
 
 body {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .cabecera,
@@ -91,9 +91,12 @@ body {
 }
 
 .pie {
+  height: 50px;
+  width: 100%;
   grid-area: pie;
   font-size: 20px;
   background-color: aquamarine;
+  margin-bottom: 0;
 }
 .pie .redes {
   display: flex;

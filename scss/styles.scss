@@ -1,8 +1,5 @@
-// Variables 
-$anchototal: 100%;
-$altototal: 100%;
-
 @import "navbar";
+@import "mixin";
 
 
 * {
@@ -23,7 +20,7 @@ $altototal: 100%;
 
 .grid {
     display: grid;
-    width: $anchototal;
+    @include atotal;
     grid-template-areas:
         "navbar-styles navbar-styles"
         "seccion seccion"
@@ -41,8 +38,7 @@ $altototal: 100%;
 
 body,
 html {
-    height: $altototal;
-    width: $anchototal;
+    @include atotal;
 }
 
 
@@ -171,10 +167,7 @@ html {
 }
 
 .pie {
-    grid-area: pie;
-    font-size: 20px;
-    background-color: aquamarine;
-    margin-bottom: 0;
+    @include piecaracteristicas;
 
     .redes {
         display: flex;

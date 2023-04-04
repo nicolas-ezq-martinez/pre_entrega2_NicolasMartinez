@@ -1,7 +1,7 @@
-$anchototal: 100%;
-$anchototal: 100%;
-
 @import "navbar";
+@import "mixin";
+
+
 
 * {
     margin: 0;
@@ -12,8 +12,7 @@ $anchototal: 100%;
 
 body,
 html {
-    height: 100%;
-    width: 100%;
+    @include atotal;
 }
 
 .cabecera,
@@ -24,8 +23,7 @@ html {
 }
 
 .main {
-    width: $anchototal;
-    height: $anchototal;
+    @include atotal;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,11 +57,7 @@ html {
     }
 
     .pie {
-        height: 50px;
-        width: $anchototal;
-        font-size: 20px;
-        background-color: aquamarine;
-        overflow: hidden;
+        @include piecaracteristicas;
 
         a {
             text-decoration: none;
@@ -73,8 +67,6 @@ html {
         .redes {
             display: flex;
             justify-content: space-around;
-
-            //
         }
     }
 }

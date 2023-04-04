@@ -1,6 +1,5 @@
-$anchototal: 100%;
-$altototal: 100%;
 @import "navbar";
+@import "mixin";
 
 * {
     margin: 0;
@@ -10,8 +9,7 @@ $altototal: 100%;
 }
 
 body {
-    height: $altototal;
-    width: $anchototal;
+    @include atotal;
 }
 
 .cabecera,
@@ -24,7 +22,7 @@ body {
 
 .grid {
     display: grid;
-    width: $anchototal;
+    width: 100%;
     grid-template-areas:
         "navbar-styles navbar-styles"
         "seccion seccion"
@@ -92,9 +90,7 @@ body {
 }
 
 .pie {
-    grid-area: pie;
-    font-size: 20px;
-    background-color: aquamarine;
+    @include piecaracteristicas;
 
     .redes {
         display: flex;

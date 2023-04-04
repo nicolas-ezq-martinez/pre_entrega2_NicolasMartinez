@@ -3,7 +3,7 @@
     position: sticky;
     z-index: 100;
     grid-area: navbar-styles;
-    width: $anchototal;
+    width: 100%;
     background-color: aquamarine;
     top: 0;
 
@@ -16,7 +16,4 @@
         text-decoration: none;
         color: inherit;
     }
-
-
-
 }
