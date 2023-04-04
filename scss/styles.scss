@@ -1,6 +1,8 @@
 // Variables 
 $anchototal: 100%;
-$anchototal: 100%;
+$altototal: 100%;
+
+@import "navbar";
 
 
 * {
@@ -21,7 +23,7 @@ $anchototal: 100%;
 
 .grid {
     display: grid;
-    width: 100%;
+    width: $anchototal;
     grid-template-areas:
         "navbar-styles navbar-styles"
         "seccion seccion"
@@ -39,7 +41,7 @@ $anchototal: 100%;
 
 body,
 html {
-    height: $anchototal;
+    height: $altototal;
     width: $anchototal;
 }
 
@@ -192,4 +194,3 @@ html {
 
 
 @import "queries";
-@import "navbar"

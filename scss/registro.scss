@@ -1,6 +1,8 @@
 $anchototal: 100%;
 $anchototal: 100%;
 
+@import "navbar";
+
 * {
     margin: 0;
     padding: 0;
@@ -61,17 +63,20 @@ html {
         width: $anchototal;
         font-size: 20px;
         background-color: aquamarine;
+        overflow: hidden;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
         .redes {
             display: flex;
             justify-content: space-around;
 
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
+            //
         }
     }
 }
 
-@import "navbar";
+@import "queriesregistro";
