@@ -11,11 +11,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <!-- personal styles -->
   <link rel="stylesheet" href="./styles/styles.css">
-  <title>Perfumo</title>
+  <title>Perfumo , aromas con envio a todo el pais </title>
+  <meta name="Descripcion"
+    content="Compra online tus perumes en Perfumo , envios a todo el pais  al mejor precio en cuotas sin interes">
+  <meta name="keywords" content="belleza , cremas , perfume , aroma">
 </head>
 
 <body>
   <main class="grid">
+    <!-- Nuestra barra de navegacion -->
     <nav class="navbar-styles">
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
@@ -46,8 +50,14 @@
         </div>
       </nav>
     </nav>
+    <header>
+      <h1>Perfumeria</h1>
+    </header>
+    <!-- Este es nuestro dropdown en el cual se filtran los resultados -->
+    <!-- Disponemos de dos dropdown los cuales son Genero y Categoria -->
     <div class="seccion">
       <span>Filtrado por:</span>
+      <!-- Genero -->
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Genero
@@ -57,6 +67,7 @@
           <li><a class="dropdown-item" href="#"><input type="checkbox">Dama</a></li>
         </ul>
       </div>
+      <!-- Categoria -->
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Categoria
@@ -67,12 +78,19 @@
         </ul>
       </div>
     </div>
+    <!-- En esta clase estan todos los container , los cuales se encuentran anidados uno dentro de otro -->
     <div class="perfumes">
-
+      <!-- Estos son los contenedores en los cuales se encuentran los perfumes -->
       <div class="container">
+        <!-- Separamos en diferentes contenedores para que sea mas organizado -->
+        <!-- En el primero dejamos la imagen -->
         <div class="articulos"><img src="./images/perfume1.jpg" alt=""></div>
+        <!-- En el segundo dejamos el nombre del articulo -->
         <div class="nombre-perfume" title="CAROLINA | HERRERA 212 HEROES FOR HER EDP"> CAROLINA | HERRERA 212 HEROES FOR
-          HER EDP</div><button class="compra">Agregar al carro</button>
+          HER EDP</div>
+        <!-- Aqui tenemos el boton asignado a la compra de los articulos -->
+        <!-- Este esquema se mantiene a lo largo de los demas container -->
+        <button class="compra">Agregar al carro</button>
       </div>
       <div class="container">
         <div class="articulos"><img src="./images/perfume2.jpg" alt=""></div>
@@ -87,7 +105,7 @@
 
 
     </div>
-
+    <!-- Lo separamos en dos categorias diferentes por un tema de orden , pero los container siguen con el mismo esquema anteriormente establecido -->
     <div class="perfumes2">
       <div class="container">
         <div class="articulos"><img src="./images/perfume4.jpg" alt=""></div>
@@ -111,6 +129,7 @@
     <footer class="pie">
 
       <div class="redes">
+        <!-- Esta es la seccion en la que se encuentran las redes sociales -->
         <div class="emoticonos"><a href="https://www.youtube.com/@AndresPerfumeMan" class="bi bi-youtube"></a></div>
         <div class="emoticonos"><a href="" class="bi bi-whatsapp">0810 888 5853</a></div>
         <div class="emoticonos"><a href="https://www.instagram.com/perfumeriasjuleriaque/" class="bi bi-instagram"></a>

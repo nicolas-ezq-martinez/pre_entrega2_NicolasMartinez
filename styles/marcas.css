@@ -26,6 +26,10 @@ body {
   width: 100%;
   height: 100%;
 }
+body header {
+  grid-area: head;
+  text-align: center;
+}
 
 .cabecera,
 .seccion,
@@ -38,9 +42,9 @@ body {
 .grid {
   display: grid;
   width: 100%;
-  grid-template-areas: "navbar-styles navbar-styles" "seccion seccion" "seccion2 seccion2" "pie pie";
+  grid-template-areas: "navbar-styles navbar-styles" "head head" "seccion seccion" "seccion2 seccion2" "pie pie";
   grid-template-columns: 2 auto;
-  grid-template-rows: repeat(3, auto) 50px;
+  grid-template-rows: auto 30px repeat(2, auto) 50px;
 }
 
 .seccion {
@@ -111,9 +115,13 @@ body {
   .grid {
     display: grid;
     width: 100%;
-    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "seccion seccion2 seccion2" "seccion seccion2 seccion2" "seccion seccion2 seccion2" "pie pie pie";
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "head head head" "seccion seccion2 seccion2" "seccion seccion2 seccion2" "seccion seccion2 seccion2" "pie pie pie";
     grid-template-columns: 1fr repeat(2, 1.5fr);
-    grid-template-rows: auto 176px auto 50px;
+    grid-template-rows: auto 30px 176px auto 50px;
+  }
+  header {
+    grid-area: head;
+    text-align: center;
   }
   .seccion {
     grid-area: seccion;

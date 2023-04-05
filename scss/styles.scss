@@ -1,5 +1,5 @@
-@import "navbar";
-@import "mixin";
+@import "./partials/navbar";
+@import "./partials/mixin";
 
 
 * {
@@ -23,6 +23,7 @@
     @include atotal;
     grid-template-areas:
         "navbar-styles navbar-styles"
+        "head head"
         "seccion seccion"
         "perfumes perfumes"
         "perfumes perfumes"
@@ -32,13 +33,18 @@
         "perfumes2 perfumes2"
         "pie pie";
     grid-template-columns: 2(auto);
-    grid-template-rows: auto auto repeat(6, auto) 50px;
+    grid-template-rows: auto 30px auto repeat(6, auto) 50px;
 
 }
 
 body,
 html {
     @include atotal;
+
+    header {
+        grid-area: head;
+        text-align: center;
+    }
 }
 
 
@@ -181,9 +187,4 @@ html {
     }
 }
 
-
-
-
-
-
-@import "queries";
+@import "./partials/queries";

@@ -4,13 +4,19 @@
         width: 100%;
         grid-template-areas:
             "navbar-styles navbar-styles navbar-styles"
+            "head head head"
             "seccion seccion2 seccion2"
             "seccion seccion2 seccion2"
             "seccion seccion2 seccion2"
             "pie pie pie";
         grid-template-columns: 1fr repeat(2, 1.5fr);
-        grid-template-rows: auto 176px auto 50px;
+        grid-template-rows: auto 30px 176px auto 50px;
 
+    }
+
+    header {
+        grid-area: head;
+        text-align: center;
     }
 
     .seccion {

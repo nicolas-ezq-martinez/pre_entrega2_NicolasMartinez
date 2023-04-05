@@ -1,5 +1,5 @@
-@import "navbar";
-@import "mixin";
+@import "./partials/navbar";
+@import "./partials/mixin";
 
 * {
     margin: 0;
@@ -10,6 +10,11 @@
 
 body {
     @include atotal;
+
+    header {
+        grid-area: head;
+        text-align: center;
+    }
 }
 
 .cabecera,
@@ -25,11 +30,12 @@ body {
     width: 100%;
     grid-template-areas:
         "navbar-styles navbar-styles"
+        "head head"
         "seccion seccion"
         "seccion2 seccion2"
         "pie pie";
     grid-template-columns: 2(auto);
-    grid-template-rows: repeat(3, auto) 50px;
+    grid-template-rows: auto 30px repeat(2, auto) 50px;
 
 }
 
@@ -103,7 +109,4 @@ body {
     }
 }
 
-
-
-
-@import "queriesmarcas";
+@import "./partials/queriesmarcas";

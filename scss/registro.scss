@@ -1,5 +1,5 @@
-@import "navbar";
-@import "mixin";
+@import "./partials/navbar";
+@import "./partials/mixin";
 
 
 
@@ -71,4 +71,4 @@ html {
     }
 }
 
-@import "queriesregistro";
+@import "./partials/queriesregistro";

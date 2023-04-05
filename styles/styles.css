@@ -34,15 +34,20 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-areas: "navbar-styles navbar-styles" "seccion seccion" "perfumes perfumes" "perfumes perfumes" "perfumes perfumes" "perfumes2 perfumes2" "perfumes2 perfumes2" "perfumes2 perfumes2" "pie pie";
+  grid-template-areas: "navbar-styles navbar-styles" "head head" "seccion seccion" "perfumes perfumes" "perfumes perfumes" "perfumes perfumes" "perfumes2 perfumes2" "perfumes2 perfumes2" "perfumes2 perfumes2" "pie pie";
   grid-template-columns: 2 auto;
-  grid-template-rows: auto auto repeat(6, auto) 50px;
+  grid-template-rows: auto 30px auto repeat(6, auto) 50px;
 }
 
 body,
 html {
   width: 100%;
   height: 100%;
+}
+body header,
+html header {
+  grid-area: head;
+  text-align: center;
 }
 
 .seccion {
@@ -196,9 +201,13 @@ html {
   .grid {
     display: grid;
     width: 100%;
-    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "seccion perfumes perfumes" "seccion perfumes2 perfumes2" "pie pie pie";
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "head head head" "seccion perfumes perfumes" "seccion perfumes2 perfumes2" "pie pie pie";
     grid-template-columns: auto repeat(2, auto);
-    grid-template-rows: auto repeat(2, auto) 50px;
+    grid-template-rows: auto 30px repeat(2, auto) 50px;
+  }
+  header {
+    grid-area: head;
+    text-align: center;
   }
   .container {
     transition: all 150ms linear;
