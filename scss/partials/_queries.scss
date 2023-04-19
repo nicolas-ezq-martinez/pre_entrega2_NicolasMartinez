@@ -13,6 +13,11 @@
         grid-template-rows: auto 30px auto 50px;
     }
 
+    .main {
+        overflow: hidden;
+        width: 100%
+    }
+
     header {
         grid-area: head;
         text-align: center;
@@ -28,10 +33,7 @@
             &:hover {
                 cursor: pointer;
                 background-color: rgb(158, 177, 177);
-
-                &:hover {
-                    animation: shake 0.5s;
-                }
+                animation: shake 0.5s;
             }
         }
 

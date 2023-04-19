@@ -34,8 +34,25 @@ html {
         button {
             margin-top: 10px;
             margin-bottom: 10px;
+            border-radius: 10px;
+            height: 40px;
+            width: 110px;
+            color: white;
+            border: none;
+            cursor: pointer;
+
+            &.registro {
+                background-color: rgb(2, 51, 124);
+            }
+
+            &.cancelar {
+                background-color: red;
+            }
         }
+
     }
+
+
 
     .pie {
         @include piecaracteristicas;
