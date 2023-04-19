@@ -8,10 +8,9 @@
             "navbar-styles navbar-styles navbar-styles"
             "head head head"
             "seccion perfumes perfumes"
-            "seccion perfumes2 perfumes2"
             "pie pie pie";
-        grid-template-columns: auto repeat(2, auto);
-        grid-template-rows: auto 30px repeat(2, auto) 50px;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto 30px auto 50px;
     }
 
     header {
@@ -33,28 +32,6 @@
                 &:hover {
                     animation: shake 0.5s;
                 }
-
-                @keyframes shake {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-
-                    25% {
-                        transform: rotate(10deg);
-                    }
-
-                    50% {
-                        transform: rotate(0eg);
-                    }
-
-                    75% {
-                        transform: rotate(-10deg);
-                    }
-
-                    100% {
-                        transform: rotate(0deg);
-                    }
-                }
             }
         }
 
@@ -68,11 +45,6 @@
         }
     }
 
-    .navbar-styles {
-        li:hover {
-            background-color: aqua;
-        }
-    }
 
     .emoticonos:hover {
         animation: shake 0.5s;

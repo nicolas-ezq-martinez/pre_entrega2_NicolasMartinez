@@ -16,4 +16,10 @@
         text-decoration: none;
         color: inherit;
     }
+
+    @media (min-width:768px) {
+        li:hover {
+            background-color: aqua;
+        }
+    }
 }

@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body,
@@ -16,7 +15,6 @@ html {
 }
 
 .cabecera,
-.navbar-style,
 .seccion,
 .pie {
     padding: 10px;
@@ -28,23 +26,6 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    .navbar-style {
-        width: 100%;
-        height: fit-content;
-        background-color: aquamarine;
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        li:hover {
-            background-color: aqua;
-        }
-
-    }
-
 
     .seccion {
         width: 50%;
