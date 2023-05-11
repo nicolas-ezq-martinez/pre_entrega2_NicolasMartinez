@@ -1,0 +1,215 @@
+.navbar-styles {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  grid-area: navbar-styles;
+  width: 100%;
+  background-color: aquamarine;
+  top: 0;
+}
+.navbar-styles ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-styles a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 768px) {
+  .navbar-styles li:hover {
+    background-color: aqua;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.seccion,
+.perfumes,
+.articulo,
+.pie {
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "navbar-styles navbar-styles" "head head" "seccion seccion" "perfumes perfumes" "perfumes perfumes" "perfumes perfumes" "pie pie";
+  grid-template-columns: 2 auto;
+  grid-template-rows: auto 30px auto repeat(6, auto) 50px;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body header,
+html header {
+  grid-area: head;
+  text-align: center;
+}
+
+.seccion {
+  grid-area: seccion;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.seccion .dropdown {
+  margin-bottom: 10px;
+}
+
+.perfumes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  cursor: default;
+  grid-area: perfumes;
+}
+
+.container {
+  flex: 1 0 30%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  min-width: 350px;
+  border: solid 1px rgb(173, 172, 172);
+  border-radius: 10px;
+  margin: 10px;
+  transition: all 150ms linear;
+}
+.container .articulos {
+  height: 240px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.container .nombre-perfume {
+  width: 100%;
+  height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.container .compra {
+  padding: 5px;
+  margin: 0 auto;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.pie {
+  height: 50px;
+  width: 100%;
+  grid-area: pie;
+  font-size: 20px;
+  background-color: aquamarine;
+  margin-bottom: 0;
+}
+.pie .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-styles {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  grid-area: navbar-styles;
+  width: 100%;
+  background-color: aquamarine;
+  top: 0;
+}
+.navbar-styles ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-styles a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 768px) {
+  .navbar-styles li:hover {
+    background-color: aqua;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "head head head" "seccion perfumes perfumes" "pie pie pie";
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 30px auto 50px;
+  }
+  .main {
+    overflow: hidden;
+    width: 100%;
+  }
+  header {
+    grid-area: head;
+    text-align: center;
+  }
+  .container {
+    transition: all 150ms linear;
+  }
+  .container .compra {
+    opacity: 0;
+    transition: all 300ms linear;
+  }
+  .container .compra:hover {
+    cursor: pointer;
+    background-color: rgb(158, 177, 177);
+    animation: shake 0.5s;
+  }
+  .container:hover {
+    border-color: rgb(5, 5, 5);
+    border-bottom: 5px solid;
+  }
+  .container:hover .compra {
+    opacity: 1;
+  }
+  .emoticonos:hover {
+    animation: shake 0.5s;
+  }
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0eg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
