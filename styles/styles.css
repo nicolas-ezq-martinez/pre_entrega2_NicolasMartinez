@@ -4,12 +4,17 @@
   z-index: 100;
   grid-area: navbar-styles;
   width: 100%;
-  background-color: aquamarine;
-  top: 0;
+  background-color: #3ABDC9;
+}
+.navbar-styles .btn-outline-success:hover {
+  background-color: #06ffff;
 }
 .navbar-styles ul {
   display: flex;
   justify-content: space-around;
+}
+.navbar-styles li {
+  border-radius: 5px;
 }
 .navbar-styles a {
   text-decoration: none;
@@ -17,41 +22,253 @@
 }
 @media (min-width: 768px) {
   .navbar-styles li:hover {
-    background-color: aqua;
+    background-color: #06ffff;
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.seccion,
-.perfumes,
-.articulo,
 .pie {
-  padding: 10px;
+  height: 50px;
+  width: 100%;
+  grid-area: pie;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie .redes a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.grid {
+.pie-marcas {
+  height: 50px;
+  width: 100%;
+  grid-area: pie-marcas;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-marcas .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-marcas .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-registro {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-registro .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-registro .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-styles {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  grid-area: navbar-styles;
+  width: 100%;
+  background-color: #3ABDC9;
+}
+.navbar-styles .btn-outline-success:hover {
+  background-color: #06ffff;
+}
+.navbar-styles ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-styles li {
+  border-radius: 5px;
+}
+.navbar-styles a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 768px) {
+  .navbar-styles li:hover {
+    background-color: #06ffff;
+  }
+}
+
+.pie {
+  height: 50px;
+  width: 100%;
+  grid-area: pie;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-marcas {
+  height: 50px;
+  width: 100%;
+  grid-area: pie-marcas;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-marcas .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-marcas .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-registro {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-registro .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-registro .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Seccion del css dedicada a los media queries de index y tratamiento */
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "encabezado encabezado encabezado" "seccion perfumes perfumes" "pie pie pie";
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 30px auto 50px;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: encabezado;
+  }
+  .container {
+    transition: all 150ms linear;
+  }
+  .container .compra {
+    opacity: 0;
+    transition: all 300ms linear;
+  }
+  .container .compra:hover {
+    cursor: pointer;
+    background-color: rgb(158, 177, 177);
+    animation: shake 0.5s;
+  }
+  .container:hover {
+    border-color: rgb(5, 5, 5);
+    border-bottom: 5px solid;
+  }
+  .container:hover .compra {
+    opacity: 1;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Seccion del css dedicada a los media queries de marcas */
+.grid-marcas {
   display: grid;
   width: 100%;
-  height: 100%;
-  grid-template-areas: "navbar-styles navbar-styles" "head head" "seccion seccion" "perfumes perfumes" "perfumes perfumes" "perfumes perfumes" "pie pie";
+  grid-template-areas: "navbar-styles navbar-styles" "encabezado encabezado" "seccion-marcas seccion-marcas" "seccion2-marcas seccion2-marcas" "pie-marcas pie-marcas";
   grid-template-columns: 2 auto;
-  grid-template-rows: auto 30px auto repeat(6, auto) 50px;
+  grid-template-rows: auto 30px repeat(2, auto) 50px;
 }
 
-body,
-html {
-  width: 100%;
-  height: 100%;
+@media (min-width: 768px) {
+  .grid-marcas {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "encabezado encabezado encabezado" "seccion-marcas seccion2-marcas seccion2-marcas" "seccion-marcas seccion2-marcas seccion2-marcas" "seccion-marcas seccion2-marcas seccion2-marcas" "pie-marcas pie-marcas pie-marcas";
+    grid-template-columns: 1fr repeat(2, 1.5fr);
+    grid-template-rows: auto 30px 176px auto 50px;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .encabezado-marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: encabezado;
+  }
+  .seccion-marcas {
+    grid-area: seccion-marcas;
+    display: flex;
+    align-items: start;
+  }
+  .marcas {
+    transition: all 150ms linear;
+  }
+  .marcas .zoom {
+    transition: transform 600ms;
+  }
+  .marcas:hover {
+    border-color: rgb(5, 5, 5);
+    border-bottom: 5px solid;
+  }
+  .marcas:hover .zoom {
+    transform: scale(0.8);
+  }
+  .emoticonos:hover {
+    animation: shake 0.5s;
+  }
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0eg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }
-body header,
-html header {
-  grid-area: head;
-  text-align: center;
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: encabezado;
 }
 
 .seccion {
@@ -115,12 +332,40 @@ html header {
   color: white;
 }
 
+.navbar-styles {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  grid-area: navbar-styles;
+  width: 100%;
+  background-color: #3ABDC9;
+}
+.navbar-styles .btn-outline-success:hover {
+  background-color: #06ffff;
+}
+.navbar-styles ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-styles li {
+  border-radius: 5px;
+}
+.navbar-styles a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 768px) {
+  .navbar-styles li:hover {
+    background-color: #06ffff;
+  }
+}
+
 .pie {
   height: 50px;
   width: 100%;
   grid-area: pie;
   font-size: 20px;
-  background-color: aquamarine;
+  background-color: #3ABDC9;
   margin-bottom: 0;
 }
 .pie .redes {
@@ -132,18 +377,56 @@ html header {
   color: inherit;
 }
 
+.pie-marcas {
+  height: 50px;
+  width: 100%;
+  grid-area: pie-marcas;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-marcas .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-marcas .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-registro {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-registro .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-registro .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar-styles {
   top: 0;
   position: sticky;
   z-index: 100;
   grid-area: navbar-styles;
   width: 100%;
-  background-color: aquamarine;
-  top: 0;
+  background-color: #3ABDC9;
+}
+.navbar-styles .btn-outline-success:hover {
+  background-color: #06ffff;
 }
 .navbar-styles ul {
   display: flex;
   justify-content: space-around;
+}
+.navbar-styles li {
+  border-radius: 5px;
 }
 .navbar-styles a {
   text-decoration: none;
@@ -151,25 +434,82 @@ html header {
 }
 @media (min-width: 768px) {
   .navbar-styles li:hover {
-    background-color: aqua;
+    background-color: #06ffff;
   }
 }
 
+.pie {
+  height: 50px;
+  width: 100%;
+  grid-area: pie;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-marcas {
+  height: 50px;
+  width: 100%;
+  grid-area: pie-marcas;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-marcas .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-marcas .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-registro {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-registro .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-registro .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Seccion del css dedicada a los media queries de index y tratamiento */
 @media (min-width: 768px) {
   .grid {
     display: grid;
     width: 100%;
-    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "head head head" "seccion perfumes perfumes" "pie pie pie";
+    height: 100%;
+    flex-direction: column;
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "encabezado encabezado encabezado" "seccion perfumes perfumes" "pie pie pie";
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto 30px auto 50px;
   }
   .main {
-    overflow: hidden;
     width: 100%;
+    height: 100%;
   }
-  header {
-    grid-area: head;
-    text-align: center;
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: encabezado;
   }
   .container {
     transition: all 150ms linear;
@@ -189,6 +529,53 @@ html header {
   }
   .container:hover .compra {
     opacity: 1;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Seccion del css dedicada a los media queries de marcas */
+.grid-marcas {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "navbar-styles navbar-styles" "encabezado encabezado" "seccion-marcas seccion-marcas" "seccion2-marcas seccion2-marcas" "pie-marcas pie-marcas";
+  grid-template-columns: 2 auto;
+  grid-template-rows: auto 30px repeat(2, auto) 50px;
+}
+
+@media (min-width: 768px) {
+  .grid-marcas {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "encabezado encabezado encabezado" "seccion-marcas seccion2-marcas seccion2-marcas" "seccion-marcas seccion2-marcas seccion2-marcas" "seccion-marcas seccion2-marcas seccion2-marcas" "pie-marcas pie-marcas pie-marcas";
+    grid-template-columns: 1fr repeat(2, 1.5fr);
+    grid-template-rows: auto 30px 176px auto 50px;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .encabezado-marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: encabezado;
+  }
+  .seccion-marcas {
+    grid-area: seccion-marcas;
+    display: flex;
+    align-items: start;
+  }
+  .marcas {
+    transition: all 150ms linear;
+  }
+  .marcas .zoom {
+    transition: transform 600ms;
+  }
+  .marcas:hover {
+    border-color: rgb(5, 5, 5);
+    border-bottom: 5px solid;
+  }
+  .marcas:hover .zoom {
+    transform: scale(0.8);
   }
   .emoticonos:hover {
     animation: shake 0.5s;
@@ -210,6 +597,387 @@ html header {
       transform: rotate(0deg);
     }
   }
+}
+.seccion-marcas {
+  grid-area: seccion-marcas;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+}
+.seccion-marcas .carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+}
+.seccion-marcas .carousel-inner {
+  max-height: 133px;
+}
+.seccion-marcas .carousel-item {
+  max-height: 100%;
+}
+.seccion-marcas .carousel-item img {
+  max-height: 100%;
+}
+
+.seccion2-marcas {
+  grid-area: seccion2-marcas;
+}
+.seccion2-marcas .grupomarcas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.seccion2-marcas .marcas {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+  border: solid 1px rgb(173, 172, 172);
+  border-radius: 10px;
+  cursor: pointer;
+  height: 220px;
+  width: 300px;
+  overflow: hidden;
+}
+.seccion2-marcas .marcas .zoom {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar-styles {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  grid-area: navbar-styles;
+  width: 100%;
+  background-color: #3ABDC9;
+}
+.navbar-styles .btn-outline-success:hover {
+  background-color: #06ffff;
+}
+.navbar-styles ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-styles li {
+  border-radius: 5px;
+}
+.navbar-styles a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 768px) {
+  .navbar-styles li:hover {
+    background-color: #06ffff;
+  }
+}
+
+.pie {
+  height: 50px;
+  width: 100%;
+  grid-area: pie;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-marcas {
+  height: 50px;
+  width: 100%;
+  grid-area: pie-marcas;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-marcas .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-marcas .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-registro {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-registro .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-registro .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-styles {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  grid-area: navbar-styles;
+  width: 100%;
+  background-color: #3ABDC9;
+}
+.navbar-styles .btn-outline-success:hover {
+  background-color: #06ffff;
+}
+.navbar-styles ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-styles li {
+  border-radius: 5px;
+}
+.navbar-styles a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 768px) {
+  .navbar-styles li:hover {
+    background-color: #06ffff;
+  }
+}
+
+.pie {
+  height: 50px;
+  width: 100%;
+  grid-area: pie;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-marcas {
+  height: 50px;
+  width: 100%;
+  grid-area: pie-marcas;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-marcas .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-marcas .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pie-registro {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #3ABDC9;
+  margin-bottom: 0;
+}
+.pie-registro .redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pie-registro .redes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Seccion del css dedicada a los media queries de index y tratamiento */
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "encabezado encabezado encabezado" "seccion perfumes perfumes" "pie pie pie";
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 30px auto 50px;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: encabezado;
+  }
+  .container {
+    transition: all 150ms linear;
+  }
+  .container .compra {
+    opacity: 0;
+    transition: all 300ms linear;
+  }
+  .container .compra:hover {
+    cursor: pointer;
+    background-color: rgb(158, 177, 177);
+    animation: shake 0.5s;
+  }
+  .container:hover {
+    border-color: rgb(5, 5, 5);
+    border-bottom: 5px solid;
+  }
+  .container:hover .compra {
+    opacity: 1;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Seccion del css dedicada a los media queries de marcas */
+.grid-marcas {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "navbar-styles navbar-styles" "encabezado encabezado" "seccion-marcas seccion-marcas" "seccion2-marcas seccion2-marcas" "pie-marcas pie-marcas";
+  grid-template-columns: 2 auto;
+  grid-template-rows: auto 30px repeat(2, auto) 50px;
+}
+
+@media (min-width: 768px) {
+  .grid-marcas {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "navbar-styles navbar-styles navbar-styles" "encabezado encabezado encabezado" "seccion-marcas seccion2-marcas seccion2-marcas" "seccion-marcas seccion2-marcas seccion2-marcas" "seccion-marcas seccion2-marcas seccion2-marcas" "pie-marcas pie-marcas pie-marcas";
+    grid-template-columns: 1fr repeat(2, 1.5fr);
+    grid-template-rows: auto 30px 176px auto 50px;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  .encabezado-marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: encabezado;
+  }
+  .seccion-marcas {
+    grid-area: seccion-marcas;
+    display: flex;
+    align-items: start;
+  }
+  .marcas {
+    transition: all 150ms linear;
+  }
+  .marcas .zoom {
+    transition: transform 600ms;
+  }
+  .marcas:hover {
+    border-color: rgb(5, 5, 5);
+    border-bottom: 5px solid;
+  }
+  .marcas:hover .zoom {
+    transform: scale(0.8);
+  }
+  .emoticonos:hover {
+    animation: shake 0.5s;
+  }
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0eg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+.body-registro {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-registro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-registro .seccion-registro {
+  width: 50%;
+  overflow: hidden;
+}
+.main-registro .seccion-registro button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 110px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.main-registro .seccion-registro button.registro {
+  background-color: rgb(2, 51, 124);
+}
+.main-registro .seccion-registro button.cancelar {
+  background-color: red;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  align-items: center;
+}
+
+footer {
+  bottom: 0;
+  position: sticky;
+  z-index: 100;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.seccion,
+.perfumes,
+.articulo,
+.pie {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

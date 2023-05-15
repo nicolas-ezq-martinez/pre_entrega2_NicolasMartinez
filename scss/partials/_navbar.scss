@@ -1,15 +1,25 @@
+@import "../base/variables";
+
 .navbar-styles {
     top: 0;
     position: sticky;
     z-index: 100;
     grid-area: navbar-styles;
     width: 100%;
-    background-color: aquamarine;
-    top: 0;
+    @include colors;
+
+    .btn-outline-success:hover {
+        @include hover;
+    }
 
     ul {
         display: flex;
         justify-content: space-around;
+
+    }
+
+    li {
+        border-radius: 5px;
     }
 
     a {
@@ -19,7 +29,7 @@
 
     @media (min-width:768px) {
         li:hover {
-            background-color: aqua;
+            @include hover;
         }
     }
 }

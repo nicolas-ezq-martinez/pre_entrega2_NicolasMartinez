@@ -1,0 +1,12 @@
+@mixin atotal {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin colors {
+    background-color: #3ABDC9;
+}
+
+@mixin hover {
+    background-color: #06ffff;
+}

@@ -1,0 +1,58 @@
+.pie {
+    height: 50px;
+    width: 100%;
+    grid-area: pie;
+    font-size: 20px;
+    @include colors;
+    margin-bottom: 0;
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+    }
+}
+
+.pie-marcas {
+    height: 50px;
+    width: 100%;
+    grid-area: pie-marcas;
+    font-size: 20px;
+    @include colors;
+    margin-bottom: 0;
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+    }
+}
+
+.pie-registro {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    @include colors;
+    margin-bottom: 0;
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+    }
+}

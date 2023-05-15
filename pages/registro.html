@@ -9,16 +9,15 @@
   <link rel="stylesheet" href="../styles/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <!-- personal styles -->
-  <link rel="stylesheet" href="../styles/registro.css">
+  <link rel="stylesheet" href="../styles/styles.css">
   <title>Registrarse</title>
   <meta name="description" content="Unete a nosotros">
 </head>
 
-<body>
+<body class="body-registro">
 
-
-  <main class="main">
-
+  <header>
+    <!-- Nuestra barra de navegacion -->
     <nav class="navbar-styles">
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
@@ -48,28 +47,32 @@
         </div>
       </nav>
     </nav>
-    <div class="seccion">
+  </header>
+
+  <main class="main-registro">
+    <div class="seccion-registro">
+      <!-- Este es nuetro formulario -->
       <div class="row">
         <form>
-          <i class="bi-person-fill" style="font-size: 2rem; color: aquamarine;"></i>
+          <i class="bi-person-fill" style="font-size: 2rem; color: #3ABDC9;"></i>
           <label for="exampleInputName1" class="form-label">Nombre</label>
           <input type="input" class="form-control" id="exampleInputName1">
 
-          <i class="bi-person-fill" style="font-size: 2rem; color: aquamarine;"></i>
+          <i class="bi-person-fill" style="font-size: 2rem; color: #3ABDC9;"></i>
           <label for="exampleInputLastName1" class="form-label">Apellido</label>
           <input type="input" class="form-control" id="exampleInputLastName1">
 
-          <i class="bi bi-calendar-week-fill" style="font-size: 2rem; color: aquamarine;"></i>
+          <i class="bi bi-calendar-week-fill" style="font-size: 2rem; color: #3ABDC9;"></i>
           <label for="exampleInputDate" class="form-label">Fecha de nacimiento</label>
           <input type="date" class="form-control" id="exampleDate">
 
-          <i class="bi bi-mailbox2" style="font-size: 2rem; color: aquamarine;"></i>
+          <i class="bi bi-mailbox2" style="font-size: 2rem; color: #3ABDC9;"></i>
           <label for="exampleInputEmail1" class="form-label">Email</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">NO COMPARTIREMOS TU MAIL CON NADIE MAS</div>
 
 
-          <i class="bi bi-lock-fill" style="font-size: 2rem; color: aquamarine;"></i>
+          <i class="bi bi-lock-fill" style="font-size: 2rem; color: #3ABDC9;"></i>
           <label for="exampleInputPassword1" class="form-label">Contraseña</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
 
@@ -81,20 +84,18 @@
 
     </div>
 
-
-
-
-    <footer class="pie">
-
-      <div class="redes">
-        <div class="emoticonos"><a href="https://www.youtube.com/@AndresPerfumeMan" class="bi bi-youtube"></a></div>
-        <div class="emoticonos"><a href="" class="bi bi-whatsapp">0810 888 5853</a></div>
-        <div class="emoticonos"><a href="https://www.instagram.com/perfumeriasjuleriaque/" class="bi bi-instagram"></a>
-        </div>
-      </div>
-
-    </footer>
   </main>
+
+  <footer class="pie-registro">
+
+    <div class="redes">
+      <div class="emoticonos"><a href="https://www.youtube.com/@AndresPerfumeMan" class="bi bi-youtube"></a></div>
+      <div class="emoticonos"><a href="" class="bi bi-whatsapp">0810 888 5853</a></div>
+      <div class="emoticonos"><a href="https://www.instagram.com/perfumeriasjuleriaque/" class="bi bi-instagram"></a>
+      </div>
+    </div>
+
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

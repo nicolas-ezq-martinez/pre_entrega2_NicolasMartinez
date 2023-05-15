@@ -1,33 +1,23 @@
-@import "./partials/navbar";
-@import "./partials/mixin";
+@import "../partials/navbar";
+@import "../partials/footer";
+@import "../base/queries";
+@import "../base/variables";
 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body,
-html {
+.body-registro {
     @include atotal;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.cabecera,
-.seccion,
-.pie {
-    padding: 10px;
-}
-
-.main {
-    @include atotal;
+.main-registro {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    .seccion {
+    .seccion-registro {
         width: 50%;
         overflow: hidden;
 
@@ -51,22 +41,4 @@ html {
         }
 
     }
-
-
-
-    .pie {
-        @include piecaracteristicas;
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .redes {
-            display: flex;
-            justify-content: space-around;
-        }
-    }
 }
-
-@import "./partials/queriesregistro";
