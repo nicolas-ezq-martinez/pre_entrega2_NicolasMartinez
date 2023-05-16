@@ -1,6 +1,10 @@
+@import "./base/variables";
 @import "./partials/indexytratamiento";
 @import "./partials/marcas";
 @import "./partials/registro";
+@import "./base/queries";
+@import "./partials/footer";
+@import "./partials/navbar";
 
 header {
     top: 0;

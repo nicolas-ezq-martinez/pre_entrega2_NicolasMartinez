@@ -1,8 +1,3 @@
-@import "../partials/navbar";
-@import "../partials/footer";
-@import "../base/queries";
-@import "../base/variables";
-
 .body-registro {
     @include atotal;
     overflow: hidden;
